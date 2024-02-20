@@ -1,4 +1,4 @@
-import AvatarImage from '../assets/pro.png';
+import AvatarImage from '../../assets/pro.png';
 export default function TwitteAvatar(){
     return(
         <div>
