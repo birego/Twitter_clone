@@ -8,5 +8,6 @@ export default function TweetBody(){
             <TweetText/>
             <TweetImage/>
         </div>
-    )
+ 
+ )
 }
