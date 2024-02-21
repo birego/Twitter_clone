@@ -5,6 +5,7 @@ export default function Tweet2(){
       <div className="tweet">
         <TwitteAvatar/>
         <TwitteContent/>
+        
       </div>  
     )
 }
