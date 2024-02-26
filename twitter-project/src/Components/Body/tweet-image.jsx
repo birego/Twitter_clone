@@ -1,9 +1,8 @@
-import TweetImg from "../../assets/tweet.jpeg"
 
-export default function TweetImage(){
+export default function TweetImage({src}){
     return(
         <div className="tweet-image">
-            <img src={TweetImg}/>
+            <img src={src}/>
         </div>
     )
 }

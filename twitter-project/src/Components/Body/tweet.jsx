@@ -1,5 +1,11 @@
-export default function Tweeti(){
-    return ( <div className="tweet">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio minima quasi modi, cum quas voluptatibus dignissimos qui perspiciatis architecto facere repellat enim laborum amet, dolores voluptas cumque dolorum praesentium neque?
-    </div> )
+import TwitteAvatar from './tweetavatar'
+import TwitteContent from "./tweetcontent"
+export default function Tweet({data}){
+
+    return(
+      <div className="tweet">
+        <TwitteAvatar avatars={data.user}/>
+        <TwitteContent actions={data.actions} content={data.content} avatars={data.user}/>
+      </div>  
+    )
 }

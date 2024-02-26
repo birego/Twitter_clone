@@ -1,8 +1,10 @@
 import TweetAction from "./tweet-act"
-export default function TweetActions(){
+export default function TweetActions({actions}){
+
     return(
+        
         <div className="tweet-actions">
-            <TweetAction/>
+            <TweetAction actio={actions}/>
         </div>
     )
 }

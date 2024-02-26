@@ -1,7 +1,7 @@
-export default function TweetTitle(){
+export default function TweetTitle({avata}){
     return(
         <div className="tweet-title">
-            <h3 className="tweet-title-author">The New-York Times <svg
+            <h3 className="tweet-title-author">{avata.name}<svg
         width="24"
         height="24"
         viewBox="0 0 24 24"
