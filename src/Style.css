@@ -1,4 +1,8 @@
+/* CODE SIDE BAR by christian birego*/
 .sidebar {
+  position: sticky;
+  left: 0;
+  top: 10px;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   width: 275px;
   height: 1024px;
@@ -14,6 +18,39 @@
   display: flex;
   gap: 5px;
 }
-.icon{  
+.icon {
   margin-top: 12px;
+}
+
+/*CODE TREND*/
+
+.trend {
+  display: flex;
+  flex-direction: column;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  margin: 20px;
+  height: 1080px;
+  margin-top: 10px;
+  gap: 20px;
+}
+.trend-column{
+  background-color: #202327;
+  border-radius: 20px;
+  width: 300px;
+}
+.trend-column input {
+  margin: 0 30px;
+  color: #6E767D;
+  border: 2px solid;
+  background-color: #202327;
+  border-radius: 10px;
+  height: 25px;
+  width: 200px;
+}
+.trends{
+  height: 426px;
+  width: 300px;
+}
+.flex{
+  display: flex;
 }
