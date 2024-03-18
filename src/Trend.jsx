@@ -1,9 +1,8 @@
+import SearchBar from "./composants/Trend/searchbar.jsx";
 export default function Trend() {
   return (
     <div className="trend">
-      <div className="trend-column">
-        <input type="text" placeholder="Search Twitter" />
-      </div>
+        <SearchBar/>
 
       <div className="trend-column trends">
         <div className="flex">
@@ -28,9 +27,9 @@ export default function Trend() {
         </div>
         <div className="flex">
           <div className="flex">
-            <p style={{ marginLeft: 20, fontSize: 14 }}>Trending turkey</p>
+            <p style={{ marginLeft: 20, fontSize: 12 }}>Trending turkey</p>
             <svg
-              style={{ marginTop: 16, marginLeft: 20 }}
+              style={{ marginTop: 12, marginLeft: 20 }}
               width="42"
               height="18"
               viewBox="0 0 42 18"
@@ -51,8 +50,12 @@ export default function Trend() {
                 fill="#6E767D"
               />
             </svg>
+            
           </div>
+          
         </div>
+        <h5 style={{ marginLeft: 20,marginTop:0}}>SQUID435</h5>
+        <p style={{ marginLeft: 20, fontSize: 12 }}>245tweet</p>
       </div>
 
       <div className="trend-column">Who to follow</div>
