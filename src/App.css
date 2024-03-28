@@ -1,8 +1,12 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+@layer components{
+    .timeline {
+        @apply relative flex w-1/2 font-sans border-l border-r border-gray-700;
+    }
+}
 *{
     margin: 0;
     padding: 0;
@@ -28,13 +32,14 @@ body {
 .trends{
     flex : 0 0 28%;
 }
-.timeline {
+/*.timeline {
     position: relative;
     flex: 0 0 50%;
     font-family: 'Inter', sans-serif;
     border-left: 1px solid #2F3336;
     border-right: 1px solid #2F3336;
 }
+*/
 .trend-body p{
  color:gray;
  font-size: 14px
