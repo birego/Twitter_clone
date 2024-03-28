@@ -1,23 +1,23 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-import "./App.css";
-import Sidebar from "./Sidebar.jsx";
-import Trend from "./Trend.jsx";
-import Profile from "./Profile.jsx"; 
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Profile from "./pages/Profile.jsx";
+import Timeline from "./pages/Timeline.jsx";
 
-const router = (
-  <Routes>
-    <Route path="/" element={<App />} />
-    <Route path="/profile" element={<Profile />} />
-  </Routes>
-);
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      { path: "/", element: <Timeline /> },
+      { path: "/:userName", element: <Profile /> },
+    ],
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
-      {router}
-    </BrowserRouter>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
