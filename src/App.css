@@ -6,10 +6,16 @@
     .timeline {
         @apply relative flex w-1/2 font-sans border-l border-r border-gray-700;
     }
+    
+@layer base{
+    *{
+        @apply m-0 p-0;
+    }
+}
+
 }
 *{
-    margin: 0;
-    padding: 0;
+    
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
