@@ -1,12 +1,7 @@
-import { Link } from "react-router-dom";
-import TweetTitleAuthor from "./tweet-title/Tweet-Title-Author";
-import TweetTitleDetails from "./tweet-title/Tweet-Title-Details";
+import { useContext } from "react";
+import { TweetContext } from "../../../../../contexts/tweets";
 
-export default function TweetTitle({ name, userName, time }) {
-  return (
-    <Link to={`/${userName}`} className="tweet-title link">
-      <TweetTitleAuthor name={name} />
-      <TweetTitleDetails username={userName} time={time} />
-    </Link>
-  );
+export default function TweetText({ text }) {
+  const tweet = useContext(TweetContext);
+  return <p className="tweet-text">{tweet.content.text}</p>;
 }
